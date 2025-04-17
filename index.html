@@ -1,123 +1,158 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Futuristik</title>
+    <title>GAN Tech</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo">
-            <img src="https://via.placeholder.com/70" alt="Logo">
-            <span>FutureTech</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="profile.html">Profil Kami</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#pesan">Hubungi Kami</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <div class="logo">
+                <div class="logo-circle">
+                    <span>G</span>
+                    <span>A</span>
+                    <span>N</span>
+                </div>
             </div>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="profile.html">Profil Kami</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Hai <span id="userName">Pengunjung</span>, Selamat Datang di Website Kami</h1>
-            <p>Ini adalah website inovatif dengan desain futuristik sederhana wkwk</p>
-            <div class="cta-buttons">
-                <button class="primary-btn">Jelajahi</button>
-                <button class="secondary-btn">Pelajari Lebih</button>
+        <!-- Welcome section -->
+        <section class="welcome-section">
+            <div class="welcome-content">
+                <h1>Halo <span id="userName">Gellang</span>, Selamat Datang di GAN Tech</h1>
+                <p>Solusi teknologi masa depan untuk bisnis Anda</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary">Mulai Eksplorasi</a>
+                    <a href="#" class="btn-secondary">Pelajari Lebih Lanjut</a>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="dimension">1366×578</div>
+        </section>
 
-    <section class="kantor">
-        <div class="container">
+        <!-- Headquarter section -->
+        <section class="headquarter-section">
             <h2>Kantor Pusat Kami</h2>
-            <div class="kantor-grid">
-                <div class="kantor-card">
-                    <div class="kantor-icon">
-                        <div class="circle"></div>
-                    </div>
-                    <h3>Jakarta</h3>
-                    <p>Jl. Sudirman No. 123</p>
-                </div>
-                <div class="kantor-card">
-                    <div class="kantor-icon">
-                        <div class="circle"></div>
-                    </div>
-                    <h3>Bandung</h3>
-                    <p>Jl. Dago No. 456</p>
-                </div>
-                <div class="kantor-card">
-                    <div class="kantor-icon">
-                        <div class="circle"></div>
-                    </div>
-                    <h3>Surabaya</h3>
-                    <p>Jl. Tunjungan No. 789</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="formulir" id="pesan">
-        <div class="container">
-            <h2>Hubungi Kami</h2>
-            <div class="form-container">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="nama">Nama:</label>
-                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="tanggal">Tanggal Lahir:</label>
-                        <input type="date" id="tanggal" name="tanggal" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Jenis Kelamin:</label>
-                        <div class="radio-group">
-                            <input type="radio" id="laki" name="gender" value="Laki-Laki" checked>
-                            <label for="laki">Laki-Laki</label>
-                            <input type="radio" id="perempuan" name="gender" value="Perempuan">
-                            <label for="perempuan">Perempuan</label>
+            <div class="locations">
+                <div class="location">
+                    <div class="location-circle">
+                        <div class="location-icon">
+                            <i class="fas fa-building"></i>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="pesan">Pesan:</label>
-                        <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini" required></textarea>
+                    <p>Jakarta</p>
+                </div>
+                <div class="location">
+                    <div class="location-circle">
+                        <div class="location-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
                     </div>
-                    <button type="submit" class="submit-btn">Kirim</button>
-                </form>
+                    <p>Bandung</p>
+                </div>
+                <div class="location">
+                    <div class="location-circle">
+                        <div class="location-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
 
-                <div class="hasil-pesan" id="hasilPesan">
-                    <h3>Informasi Yang Dikirim</h3>
-                    <div class="hasil-content">
-                        <p>Waktu: <span id="waktuSekarang"></span></p>
-                        <p>Nama: <span id="hasilNama"></span></p>
-                        <p>Tanggal Lahir: <span id="hasilTanggal"></span></p>
-                        <p>Jenis Kelamin: <span id="hasilGender"></span></p>
-                        <p>Pesan: <span id="hasilPesanText"></span></p>
+        <!-- Message Us section -->
+        <section class="message-section">
+            <h2>Hubungi Kami</h2>
+            <div class="message-container">
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <span>:</span>
+                            <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+                            <div class="error-message" id="namaError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal Lahir</label>
+                            <span>:</span>
+                            <div class="date-input">
+                                <input type="date" id="tanggal" required>
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="error-message" id="tanggalError"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Jenis Kelamin</label>
+                            <span>:</span>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="laki" name="gender" value="Laki-Laki" checked>
+                                    <label for="laki">Laki-Laki</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                                    <label for="perempuan">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <span>:</span>
+                            <textarea id="pesan" placeholder="Tulis pesan Anda di sini" required></textarea>
+                            <div class="error-message" id="pesanError"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">Kirim</button>
+                    </form>
+                </div>
+                <div class="message-display" id="messageDisplay">
+                    <div class="message-header">
+                        <p>Waktu saat ini : <span id="currentTime"></span></p>
+                    </div>
+                    <div class="message-content" id="messageContent">
+                        <p><strong>Nama</strong> : <span id="displayNama">-</span></p>
+                        <p><strong>Tanggal Lahir</strong> : <span id="displayTanggal">-</span></p>
+                        <p><strong>Jenis Kelamin</strong> : <span id="displayGender">-</span></p>
+                        <p><strong>Pesan</strong> : <span id="displayPesan">-</span></p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>Dibuat Gellang tugas REVO-U &copy; 2025</p>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="logo-small">
+                        <div class="logo-circle">
+                            <span>G</span>
+                            <span>A</span>
+                            <span>N</span>
+                        </div>
+                    </div>
+                    <p>© 2025 GAN Tech</p>
+                </div>
+                <div class="footer-right">
+                    <p>Dibuat dengan <i class="fas fa-heart"></i> oleh GellangAN</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
