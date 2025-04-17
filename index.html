@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Futuristik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/70" alt="Logo">
+            <span>FutureTech</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="profile.html">Profil Kami</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#pesan">Hubungi Kami</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Hai <span id="userName">Pengunjung</span>, Selamat Datang di Website Kami</h1>
+            <p>Ini adalah website inovatif dengan desain futuristik sederhana wkwk</p>
+            <div class="cta-buttons">
+                <button class="primary-btn">Jelajahi</button>
+                <button class="secondary-btn">Pelajari Lebih</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="kantor">
+        <div class="container">
+            <h2>Kantor Pusat Kami</h2>
+            <div class="kantor-grid">
+                <div class="kantor-card">
+                    <div class="kantor-icon">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Jakarta</h3>
+                    <p>Jl. Sudirman No. 123</p>
+                </div>
+                <div class="kantor-card">
+                    <div class="kantor-icon">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Bandung</h3>
+                    <p>Jl. Dago No. 456</p>
+                </div>
+                <div class="kantor-card">
+                    <div class="kantor-icon">
+                        <div class="circle"></div>
+                    </div>
+                    <h3>Surabaya</h3>
+                    <p>Jl. Tunjungan No. 789</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulir" id="pesan">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal Lahir:</label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="laki" name="gender" value="Laki-Laki" checked>
+                            <label for="laki">Laki-Laki</label>
+                            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda di sini" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim</button>
+                </form>
+
+                <div class="hasil-pesan" id="hasilPesan">
+                    <h3>Informasi Yang Dikirim</h3>
+                    <div class="hasil-content">
+                        <p>Waktu: <span id="waktuSekarang"></span></p>
+                        <p>Nama: <span id="hasilNama"></span></p>
+                        <p>Tanggal Lahir: <span id="hasilTanggal"></span></p>
+                        <p>Jenis Kelamin: <span id="hasilGender"></span></p>
+                        <p>Pesan: <span id="hasilPesanText"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Dibuat Gellang tugas REVO-U &copy; 2025</p>
+        </div>
+    </footer>
+</body>
+
+</html>
